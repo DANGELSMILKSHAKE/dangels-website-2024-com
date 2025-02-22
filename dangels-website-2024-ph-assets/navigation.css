@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0080f1;
+        padding: 10px 20px;
+        color: white;
+        margin: 0;
+        position: sticky;
+        top: 0;
+    }
+    
+    .menu {
+        z-index: 3;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 130px;
+        right: 10px;
+        background: linear-gradient(45deg, cyan 40%, aqua 80%);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .menu a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 700;
+    }
+    
+    .menu a:hover {
+        background-color: gold;
+
+    }
+    
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    #menu-toggle:checked + label .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    #menu-toggle:checked + label .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #menu-toggle:checked + label .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+    
+    @media (min-width: 690px) {
+
+        .menu {
+            display: flex;
+            position: static;
+            flex-direction: row;
+            gap: 10px;
+            background: none;
+            padding: 0;
+            font-size: 20px
+        }
+    
+        .hamburger {
+            display: none;
+        }
+    
+        #menu-toggle {
+            display: none;
+        }
+        gadget-header { display: none; }
+        
+    }
+    @media (max-width: 990px) {
+        header {display: none;}
+        gadget-header { display: flex; align-items: center; justify-content: center; padding: 14px; color: white; background: rgb(144, 200, 255); font-size: 1.4em; font-weight: 900; text-shadow: 3px 2px 3px black; text-transform: uppercase;}
+    }
+    .logo-container {
+    display: flex;
+    align-items: center;
+    position: static;
+    }
+    .logo-text {
+    margin-left: 20px;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: white;
+    text-shadow: 3px 2px 3px black;
+    }
+    .logo-container img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    }

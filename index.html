@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="module" src="dangels-website-2024-ph-api/firebase-connection.js"></script>
+<title>Home | DANGELS MILKSHAKE & MILKTEA</title>
+<link rel="stylesheet" href="dangels-website-2024-ph-assets/index.css">  
+<link rel="stylesheet" href="dangels-website-2024-ph-assets/navigation.css">
+</head>
+    <body>
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="dangels-website-2024-ph-assets/dangels-logo.png" alt="logo">
+            <div class="logo-text">D'ANGELS MILKSHAKE AND MILKTEA</div>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </label>
+            <div class="menu">
+            <a href="#">Home</a>
+            <a href="dangels-website-2024-ph-about-us.html">About</a>
+            <a href="dangels-website-2024-ph-gallery.html">Gallery</a>
+            <a href="dangels-website-2024-ph-products.html">Products</a>
+            <a href="dangels-website-2024-ph-contact-us.html">Contact Us</a>
+            </div>
+        </div>
+<div class="content-section" id="content-section">
+<header>Welcome To D'Angels Milkshake & Milktea</header>
+<gadget-header>welcome to d'angels milkshake & milktea</gadget-header>
+<br><br>
+<hr color="green">
+
+</div>      
+            
+    </body>
+    <script>
+        if (!getCookie("cookieConsent")) {
+            showCookieBanner();
+        }
+        function showCookieBanner() {
+            let banner = document.createElement("div");
+            banner.id = "cookieBanner";
+            banner.innerHTML = `
+                <div style="position: fixed; bottom: 0; width: 100%; background: #222; color: #fff; padding: 15px; text-align: center; font-size: 14px;">
+                    We use cookies to improve your experience. By continuing, you agree to our <a href="cookies-policy.html" style="color: #ffd700;">Cookies Policy</a>.
+                    <button onclick="acceptCookies()" style="background: #28a745; color: #fff; padding: 8px 12px; border: none; cursor: pointer; margin-left: 10px;">Accept</button>
+                    <button onclick="declineCookies()" style="background: #dc3545; color: #fff; padding: 8px 12px; border: none; cursor: pointer; margin-left: 5px;">Decline</button>
+                </div>
+            `;
+            document.body.appendChild(banner);
+        }
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + value + "; path=/" + expires;
+        }
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let c = cookies[i].trim();
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        function acceptCookies() {
+            setCookie("cookieConsent", "accepted", 30);
+            document.getElementById("cookieBanner").remove();
+        }
+        function declineCookies() {
+            setCookie("cookieConsent", "declined", 30);
+            document.getElementById("cookieBanner").remove();
+        }
+    </script>
+    
+</html>

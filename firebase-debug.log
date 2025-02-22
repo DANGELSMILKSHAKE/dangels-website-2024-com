@@ -1,0 +1,88 @@
+[debug] [2025-02-22T14:42:10.827Z] ----------------------------------------------------------------------
+[debug] [2025-02-22T14:42:10.857Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2025-02-22T14:42:10.858Z] CLI Version:   13.29.1
+[debug] [2025-02-22T14:42:10.859Z] Platform:      win32
+[debug] [2025-02-22T14:42:10.859Z] Node Version:  v22.14.0
+[debug] [2025-02-22T14:42:10.860Z] Time:          Sat Feb 22 2025 22:42:10 GMT+0800 (Singapore Standard Time)
+[debug] [2025-02-22T14:42:10.860Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-22T14:42:10.872Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as dangelsmilkshake2005@gmail.com
+[debug] [2025-02-22T14:42:16.441Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:269:49)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-02-22T14:42:35.637Z] ----------------------------------------------------------------------
+[debug] [2025-02-22T14:42:35.650Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-02-22T14:42:35.652Z] CLI Version:   13.29.1
+[debug] [2025-02-22T14:42:35.653Z] Platform:      win32
+[debug] [2025-02-22T14:42:35.653Z] Node Version:  v22.14.0
+[debug] [2025-02-22T14:42:35.654Z] Time:          Sat Feb 22 2025 22:42:35 GMT+0800 (Singapore Standard Time)
+[debug] [2025-02-22T14:42:35.655Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-22T14:42:35.668Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-22T14:42:35.804Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-22T14:42:35.805Z] > authorizing via signed-in user (dangelsmilkshake2005@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ADMIN\Desktop\dangels-website-2024-ph
+
+[debug] [2025-02-22T14:42:47.146Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-22T14:42:47.147Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-22T14:43:34.912Z] Checked if tokens are valid: false, expires at: 1739544148255
+[debug] [2025-02-22T14:43:34.913Z] Checked if tokens are valid: false, expires at: 1739544148255
+[debug] [2025-02-22T14:43:34.915Z] > refreshing access token with scopes: []
+[debug] [2025-02-22T14:43:34.921Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-22T14:43:34.921Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-22T14:43:37.456Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-22T14:43:37.456Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-22T14:43:37.487Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-02-22T14:44:01.394Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects?pageSize=100, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100 failed, reason: 
+[debug] [2025-02-22T14:44:01.397Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+[debug] [2025-02-22T14:44:01.769Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+    at RetryOperation._fn (C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2025-02-22T14:45:40.685Z] ----------------------------------------------------------------------
+[debug] [2025-02-22T14:45:40.722Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2025-02-22T14:45:40.724Z] CLI Version:   13.29.1
+[debug] [2025-02-22T14:45:40.725Z] Platform:      win32
+[debug] [2025-02-22T14:45:40.725Z] Node Version:  v22.14.0
+[debug] [2025-02-22T14:45:40.726Z] Time:          Sat Feb 22 2025 22:45:40 GMT+0800 (Singapore Standard Time)
+[debug] [2025-02-22T14:45:40.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-22T14:45:40.752Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-22T14:45:40.753Z] > authorizing via signed-in user (dangelsmilkshake2005@gmail.com)
+[debug] [2025-02-22T14:45:40.777Z] Checked if tokens are valid: true, expires at: 1740239016457
+[debug] [2025-02-22T14:45:40.777Z] Checked if tokens are valid: true, expires at: 1740239016457
+[debug] [2025-02-22T14:45:40.781Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-02-22T14:45:44.678Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-02-22T14:45:44.679Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] ┌────────────────────────────┬────────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name       │ Project ID                 │ Project Number │ Resource Location ID │
+├────────────────────────────┼────────────────────────────┼────────────────┼──────────────────────┤
+│ dangels-marble-distributor │ dangels-marble-distributor │ 689138169207   │ [Not specified]      │
+├────────────────────────────┼────────────────────────────┼────────────────┼──────────────────────┤
+│ dangels-website            │ dangels-website            │ 348382920685   │ [Not specified]      │
+├────────────────────────────┼────────────────────────────┼────────────────┼──────────────────────┤
+│ dangels-website-2024-ph    │ dangels-website-2024-ph    │ 254460630055   │ [Not specified]      │
+└────────────────────────────┴────────────────────────────┴────────────────┴──────────────────────┘
+[info] 
+[info] 3 project(s) total.
